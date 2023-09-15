@@ -130,7 +130,7 @@ p {
 }
 
 .header-description {
-  margin: auto;
+  display: inline-block;
   max-width: 30em;
 }
 
