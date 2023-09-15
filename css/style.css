@@ -43,6 +43,7 @@ button:hover {
 }
 
 header {
+  min-height: 30vh;
   height: 100vh;
   background-color: #282d32;
 }
@@ -63,6 +64,12 @@ p {
 }
 
 /* CONTAINERS STYLES */
+.header-content{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 150px;
+}
 .container {
   padding: 1em;
   font-size: 30px;
@@ -130,7 +137,6 @@ p {
 }
 
 .header-description {
-  display: inline-block;
   max-width: 30em;
 }
 
@@ -139,7 +145,8 @@ p {
   letter-spacing: -.025em;
   line-height: 1.25;
   justify-content: center;
-  display: flex;
+  text-align: center;
+  display:flex;
 }
 
 .header-small {
@@ -164,6 +171,7 @@ p {
   /* GLOBAL STYLES */
   header {
     overflow: hidden;
+    min-height: 50vh;
   }
 
   img {
@@ -209,19 +217,24 @@ p {
     margin: 6em 3em 0;
     max-width: 50vw;
   }
-
+  .header-small{
+    text-align: center;
+  }
   .header-title {
+    text-align: center;
     font-size: calc(1vw + 2.5em);
   }
 }
 
 @media only screen and (orientation: portrait) and (min-height: 1024px) {
   header {
-    height: 50vh;
+    height: 70vh;
   }
-
+  .header-title{
+    text-align: center;
+  }
   .header-small {
-    text-align: justify;
+    text-align: center;
   }
 
   .logo-link {
